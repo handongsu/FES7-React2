@@ -1,0 +1,18 @@
+.header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.titleImage{
+  position: absolute;
+  z-index: 2;
+  margin-top: 55px;
+  /* margin: auto; */
+
+}
+.timeImage{
+  position: relative;
+  z-index: 1;
+}
+

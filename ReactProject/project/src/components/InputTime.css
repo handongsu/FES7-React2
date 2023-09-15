@@ -1,0 +1,14 @@
+.inputSec{
+  margin-top: 102px;
+  font-family: 'GmarketSansMedium';
+}
+
+.inputSec p {
+  font-size: 24px;
+  font-weight: 400;
+  
+}
+
+.handImage{
+  transform: translate(7px,70%);
+}

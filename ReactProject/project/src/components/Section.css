@@ -1,0 +1,24 @@
+.section {
+  margin-top: 66px;
+}
+
+p{
+  text-align: center;
+  font-family: 'GmarketSansMedium';
+  font-size: 24px;
+  font-style: normal;
+}
+
+.commaBox{
+  display: flex;
+  justify-content: center;
+}
+.commaBox img {
+  object-fit: contain;
+  height: 100%;
+  transform: translate(0%, 50%);
+}
+
+.commaBox p {
+  margin: 0 14px;
+}
