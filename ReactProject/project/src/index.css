@@ -16,8 +16,17 @@ body {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
-        font-style: normal;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Noto+Sans+KR&display=swap');
+
+
 code {
     font-family: 'source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New',
         monospace;
@@ -30,7 +39,7 @@ h1 {
 * {
     color: white;
     text-align: center;
-    font-family: tvN Enjoystories;
+    font-family: 'tvN Enjoystories';
     box-sizing: border-box;
 }
 
@@ -40,5 +49,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 1.4;
+    line-height: 1.7;
+    margin: 80px 0;
 }

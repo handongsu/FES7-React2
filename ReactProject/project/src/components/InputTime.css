@@ -1,9 +1,11 @@
 .inputSec{
   margin-top: 102px;
   font-family: 'GmarketSansMedium';
+  margin-bottom: 147px;
+  font-size: 24px;
 }
 
-.inputSec p {
+.inputSec span {
   font-size: 24px;
   font-weight: 400;
   
