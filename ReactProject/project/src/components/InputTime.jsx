@@ -99,11 +99,6 @@ function InputTime({setEnteredModal}) {
     대략  <Outputs>{enteredTime}</Outputs>  일 이상 훈련하셔야 합니다! :)</p><br/>
       <Button style={{backgroundColor:"#FCEE21", marginRight:"18px"}} onClick={ModalHandler}>훈련하러가기 GO!GO!</Button><Button style={{backgroundColor:"#FFF"}} onClick={UrlHandler}>공유하기</Button>
     </>)}
-    {/* {loading ? <Loading/> : enteredEdit && (<><p>당신은 <Outputs>{enteredTitle}</Outputs>  전문가가 되기 위해서<br/>
-    대략  <Outputs>{enteredTime}</Outputs>  일 이상 훈련하셔야 합니다! :)</p><br/>
-      <Button style={{backgroundColor:"#FCEE21", marginRight:"18px"}} onClick={ModalHandler}>훈련하러가기 GO!GO!</Button><Button style={{backgroundColor:"#FFF"}} onClick={UrlHandler}>공유하기</Button>
-    </>)} */}
-
     {!enteredEdit && ""}
     </>
     
