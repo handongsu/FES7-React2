@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './InputTime.css';
 import styled from 'styled-components';
+// import Loading from './Loading';
 
 const Inputs = styled.input`
   width: 228px;
@@ -57,7 +58,7 @@ function InputTime({setEnteredModal}) {
       setEnteredEdit(false);
       e.preventDefault(); //form 안에 있는 input값 동작을 중지
     } else {
-      setEnteredTime(Math.ceil(10000/enteredTime));
+      setEnteredTime(parseInt(10000/enteredTime));
     }
   }
 
@@ -94,10 +95,14 @@ function InputTime({setEnteredModal}) {
         <img className='handImage' alt='hand' src='img/hand.png'/>
     </form>
 
-    {enteredEdit && (<><p>당신은 <Outputs>{enteredTitle}</Outputs> 전문가가 되기 위해서<br/>
-    대략 <Outputs>{enteredTime}</Outputs> 일 이상 훈련하셔야 합니다! :)</p><br/>
+    {enteredEdit && (<><p>당신은 <Outputs>{enteredTitle}</Outputs>  전문가가 되기 위해서<br/>
+    대략  <Outputs>{enteredTime}</Outputs>  일 이상 훈련하셔야 합니다! :)</p><br/>
       <Button style={{backgroundColor:"#FCEE21", marginRight:"18px"}} onClick={ModalHandler}>훈련하러가기 GO!GO!</Button><Button style={{backgroundColor:"#FFF"}} onClick={UrlHandler}>공유하기</Button>
     </>)}
+    {/* {loading ? <Loading/> : enteredEdit && (<><p>당신은 <Outputs>{enteredTitle}</Outputs>  전문가가 되기 위해서<br/>
+    대략  <Outputs>{enteredTime}</Outputs>  일 이상 훈련하셔야 합니다! :)</p><br/>
+      <Button style={{backgroundColor:"#FCEE21", marginRight:"18px"}} onClick={ModalHandler}>훈련하러가기 GO!GO!</Button><Button style={{backgroundColor:"#FFF"}} onClick={UrlHandler}>공유하기</Button>
+    </>)} */}
 
     {!enteredEdit && ""}
     </>

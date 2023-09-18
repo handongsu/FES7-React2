@@ -11,7 +11,6 @@ const Buttons = (props) =>{
                 <ButtonComp key={index} mood={moodEl} setCurrentMood = {props.setCurrentMood}/>
             )}
         </ul>
-        
     );
 }
 

@@ -16,7 +16,9 @@ const Login = ({infoUser, setLogin}) => {
     }
 
     const handleLoginSubmit = (event) => {
-        event.preventDefault();
+
+        // event.preventDefault();
+
         if(id === ''){
             alert("아이디를 입력하지 않았습니다.");
         }
@@ -25,7 +27,7 @@ const Login = ({infoUser, setLogin}) => {
         }
 
         if (id === infoUser.idUser && +pw === infoUser.pwUser) {
-            setLogin(true); 
+            setLogin(true);
         }
         console.log(`id : ${id}, pw : ${pw}`);
     }
@@ -38,7 +40,7 @@ const Login = ({infoUser, setLogin}) => {
 
     return(
         <div>
-             <form onSubmit={handleLoginSubmit}>
+            <form onSubmit={handleLoginSubmit}>
             <label>
                 아이디 :
                 <input type="text" onChange={handleLoginInput} />
@@ -50,7 +52,6 @@ const Login = ({infoUser, setLogin}) => {
             </label>
             <button type="submit">로그인</button>
         </form>
-        {/* {onPage()} */}
         </div>
         
     )
