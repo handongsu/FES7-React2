@@ -1,0 +1,29 @@
+.todo-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.todo-main hr{
+  width: 500px;
+}
+
+.todo-main-form input{
+  width: 300px;
+  margin-right: 10px;
+  height: 20px;
+}
+
+.todo-main-section{
+  display: flex;
+  gap: 10px;
+}
+
+.todo-main-section button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
