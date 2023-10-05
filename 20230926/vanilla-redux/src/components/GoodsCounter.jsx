@@ -5,16 +5,14 @@ import { addNumber, subtractNumber } from '../modules/goodsCounter';
 export default function GoodsCounter() {
 
   //store의 state 접근하도록 합니다.
-  const {stock, goods} = useSelector((state) => {
+  const {stock, goods} = useSelector((state) => { //redux 상태 스토어의 현재 상태 useSelector를 이용하여 state에서 필요한 상태 값을 추출, 해당 상태 값을 stock 및 goods 변수에 할당
     return {
       stock: state.goodsReducer.stock,
       goods: state.goodsReducer.goods,
     }
   });
 
-
-
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // 코드를 이해하기 쉽고, 유지보수가 용이하게 하기 위해 변수에 할당
 
   //디스패치 함수에  액션을 인자로 전달하여 실행합니다.
   const onSubtractNumber = () => dispatch(subtractNumber())
