@@ -6,8 +6,7 @@ import { useState } from 'react'
 export default function Signup() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    // displayName은 파이어베이스에서 유저 정보에 저장 할 수 있는 속성중 하나입니다. 
-    // 때문에 다른 변수명을 사용하지 말아주세요. ( 참고 : https://firebase.google.com/docs/reference/js/auth.md#updateprofile)
+    // displayName은 파이어베이스에서 유저 정보에 저장 할 수 있는 속성중 하나입니다.     // 때문에 다른 변수명을 사용하지 말아주세요. ( 참고 : https://firebase.google.com/docs/reference/js/auth.md#updateprofile)
     const [displayName, setDisplayName] = useState('');
 
     const handleData = (event) => {
